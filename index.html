@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garg Drycleaners</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+    h1{
+      font-family:Anton;
+    }
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+    h1 {
+      font-family: 'Anton', sans-serif;
+    }
+.text {
+  
+  
+  background: url('/istockphoto-1469829952-612x612.jpg') no-repeat center;
+  -webkit-background-clip: text;
+ background-size:200%;
+ 
+ color : transparent;
+}
+nav{
+  height:20vh;
+ 
+  background-size:;
+}
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 overflow-x-hidden">
+        <div class="fixed h-20 z-80 right-16 bottom-20">
+          <div class="rotating-div rounded-full  w-20 overflow-hidden">
+            <img src="/EN_legend_large.png" class="rotating-image h-26 w-26 object-cover rounded-full " alt="image">
+          </div>
+        </div>
+<header class="bg-gradient-to-r from-blue-400 via-gray-200  to-blue-300 text-black">
+  <nav class=" py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#" class="text-3xl font-bold tracking-wide">
+          <img src="large.png" class="h-24 rounded-lg" alt="large.png ">
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-16 text-lg text-black font-large px-12 ">
+        <a href="#home" class="hover:text-gray-400 transition">Home</a>
+        <a href="#about" class="hover:text-gray-400 transition">About</a>
+        <a href="#services" class="hover:text-gray-400 transition">Services</a>
+        <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden flex items-center focus:outline-none">
+        <span class="text-2xl">&#9776;</span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-black ">
+      <ul class="flex flex-col items-center space-y-4 py-4">
+        <li><a href="#home" class="hover:text-gray-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-400 transition">About</a></li>
+        <li><a href="#services" class="hover:text-gray-400 transition">Services</a></li>
+        <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="  min-h-screen flex flex-col py-16
+ 20 items-center  text-center px-6 relative">
+    <h1 class=" text text-6xl md:text-8xl font-bold mb-6">Garg Drycleaners</h1>
+    <p class="text-lg md:text-2xl text-gray-600 max-w-3xl">
+      Professional and affordable dry cleaning services, keeping your clothes fresh and spotless.
+    </p>
+<a href="form.html" class="bg-gray-900 text-white py-3 mt-10 px-6 rounded-md hover:bg-gray-700 transition">
+   Get Started
+</a>
+
+    <!-- Subtle Animated Background -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      <div class="circle bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-50 blur-lg"></div>
+    </div>
+  </section>
+<!--About section -->
+<section id="about" class="bg-gray-100 pb-16">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <!-- Image Section -->
+      <div>
+        <img src="/photo-1717342586432-3fb4c5bd39c1.jpeg" alt="About Garg Drycleaners" class="rounded-lg shadow-lg h-3/4 ">
+      </div>
+
+      <!-- Text Section -->
+      <div>
+        <h1 class="text-8xl text font-bold  px-10 mb-6">About Us</h1>
+        <p class="text-lg text-gray-600 mb-6">
+          At <span class="font-bold text-gray-900 text-center">Garg Drycleaners</span>, we specialize in providing high-quality dry cleaning, laundry, and ironing services to make your life easier. With years of experience and a focus on customer satisfaction, we’ve earned a reputation for excellence.
+        </p>
+        <p class="text-lg text-gray-600 mb-6 text-center">
+          Our state-of-the-art equipment and eco-friendly solutions ensure your clothes look their best while staying kind to the environment. Whether it's delicate fabrics or everyday wear, trust us to handle your garments with care.
+        </p>
+        <a href="#services" class="px-28 py-3 bg-gray-900 text-white rounded-md shadow hover:bg-gray-700 transition justify-center items-center ml-32">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+  <!-- Services Section -->
+<section id="services" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-8xl text font-bold ">Our Services</h2>
+      <p class="text-lg text-gray-600 mt-4">We provide top-notch dry cleaning services tailored to your needs.</p>
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1: Sofa Dry Cleaning -->
+        <div class="swiper-slide flex flex-col items-center">
+          <img src="/istockphoto-1417038143-612x612.webp" alt="Sofa Dry Cleaning" class="rounded-lg shadow-md mb-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Sofa Dry Cleaning</h3>
+          <p class="text-gray-600 mt-2 text-center">
+            Restore your sofa to its original shine with our professional sofa cleaning services.
+          </p>
+        </div>
+
+        <!-- Slide 2: Laundry Dry Cleaning -->
+        <div class="swiper-slide flex flex-col items-center">
+          <img src="/istockphoto-1126091494-612x612.jpg" alt="Laundry Dry Cleaning" class="rounded-lg shadow-md mb-6">
+          <h3 class="text-2xl font-semibold text-gray-800">Laundry Dry Cleaning</h3>
+          <p class="text-gray-600 mt-2 text-center">
+            Experience spotless and fresh laundry with our high-quality cleaning solutions.
+          </p>
+        </div>
+
+        <!-- Slide 3: Coat & Pant Dry Cleaning -->
+        <div class="swiper-slide flex flex-col items-center">
+          <img src="/istockphoto-1265193068-612x612.webp  " alt="Coat & Pant Dry Cleaning" class="rounded-lg shadow-md mb-6">
+          <h3 class="text-2xl font-semibold text-gray-800 text-center">Coat & Pant Dry Cleaning</h3>
+          <p class="text-gray-600 mt-2 text-center">
+            Perfectly clean and pressed coats and pants for your special occasions.
+          </p>
+        </div>
+      </div>
+
+  
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->  
+<section id="contact" class=" bg-gray-100 py-16">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- Contact Information -->
+      <div>
+        <h1 class="text-7xl text  font-bold  mb-6">Contact Us</h1>
+        <p class="text-lg text-gray-600 mb-6">
+          We’d love to hear from you! Whether you have questions about our services or need assistance, feel free to reach out.
+        </p>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Email</h3>
+          <p class="text-lg text-gray-600">Shubhamhog@gmail.com</p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Phone</h3>
+          <p class="text-lg text-gray-600">+91 8708990524</p>
+          <p class="text-lg text-gray-600">+91 9817438891</p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Address</h3>
+          <p class="text-lg text-center text-gray-600">
+            Brahi Fatak Line paar  Bahadurgarh Jhajjar, <br>
+         
+          </p>
+        </div>
+      </div>
+<div id="rotate-message" class="fixed inset-0 bg-gray-900 bg-opacity-90 flex flex-col items-center justify-center text-white text-center">
+<p class="text-3xl font-bold mb-4">Please Rotate Your Device</p>
+<p class="text-lg">This website is best viewed in landscape mode.</p>
+</div>
+      <!-- Contact Form -->
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-5xl font-mono font-light text-gray-900 mb-6">Get in Touch</h2>
+       <form action="https://formspree.io/f/mrbgarnj" method="POST">
+          <div class="mb-6">
+            <label for="name" class="block text-lg font-semibold text-gray-800 mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-gray-500" placeholder="Your Name" required>
+          </div>
+
+          <div class="mb-6">
+            <label for="phone" class="block text-lg font-semibold text-gray-800 mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-gray-500" placeholder="Your Phone Number" required>
+          </div>
+
+          <div class="mb-6">
+            <label for="description" class="block text-lg font-semibold text-gray-800 mb-2">Description</label>
+            <textarea id="description" name="description" rows="5" class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-gray-500" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-gray-900 text-white py-3 rounded-md hover:bg-gray-700 transition">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="py-6 text-center bg-gray-900 text-white">
+    © 2024 Garg Drycleaners. All rights reserved.
+  </footer>
+
+<!-- Swiper.js CDN -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+function checkOrientation() {
+if (window.innerHeight > window.innerWidth) {
+document.getElementById('rotate-message').style.display = 'flex';
+} else {
+document.getElementById('rotate-message').style.display = 'none';
+}
+}
+
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('load', checkOrientation);
+</script>
+<script>
+
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  // Scroll Animations
+const scrollElements = document.querySelectorAll(".scroll-reveal");
+
+const elementInView = (el, dividend = 1.25) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("visible");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("visible");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el)) {
+      displayScrollElement(el);
+    } else {
+      hideScrollElement(el);
+    }
+  });
+};
+
+window.addEventListener("scroll", () => {
+  handleScrollAnimation();
+});
+
+// Fade-In on Load
+window.onload = () => {
+  const fadeInElements = document.querySelectorAll(".fade-in, .fade-in-delayed");
+  fadeInElements.forEach((el) => {
+    el.style.opacity = 1;
+  });
+};
+
+// Button Hover Effect
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("mouseenter", (e) => {
+    const rect = button.getBoundingClientRect();
+    const ripple = document.createElement("span");
+    ripple.style.width = ripple.style.height = `${rect.width}px`;
+    ripple.style.left = `${e.clientX - rect.left - rect.width / 2}px`;
+    ripple.style.top = `${e.clientY - rect.top - rect.height / 2}px`;
+    ripple.classList.add("ripple");
+    button.appendChild(ripple);
+
+    ripple.addEventListener("animationend", () => {
+      ripple.remove();
+    });
+  });
+});
+</script>
+<!-- GSAP Core Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+
+<!-- GSAP ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</body>
+</html>
